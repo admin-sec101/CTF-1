@@ -263,3 +263,16 @@ atau Anda bisa menggunakan `binwalk –extract meme.jpg`
 Prinsipnya dapat dipahami secara sederhana sebagai file terkompresi yang berisi konten gambar dan file lain.
 
 Tentu saja, informasi yang dapat dibaca dalam teks biasa akan ditampilkan saat menggunakan string.
+
+# Spectrograms — Task 2
+
+Dalam room ini, terdapat satu bagian khusus (Task 2) yang mewajibkan Anda menggunakan spektrogram untuk menemukan jawaban tersembunyi di dalam file audio berformat .wav
+Berikut adalah panduan singkat untuk menyelesaikan tugas tersebut:
+Unduh File: Ambil file audio .wav yang disediakan di Task 2.
+Gunakan Alat Analisis:
+Sonic Visualiser: Buka file tersebut, lalu pilih menu Layer > Add Spectrogram.
+Audacity: Buka file, klik tanda panah di samping nama trek, dan ubah tampilan dari Waveform menjadi Spectrogram.
+Online: Anda juga bisa menggunakan alat berbasis web seperti Aperi'Solve atau fitur analisis spektral di dCode.
+Temukan Flag: Setelah tampilan spektrogram muncul, teks atau "flag" akan terlihat secara visual di antara frekuensi suara tersebut
+
+<img width="1366" height="730" alt="image" src="https://github.com/user-attachments/assets/d82bc078-cdd4-49db-85f6-ea679492a62e" />
