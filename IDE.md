@@ -1,10 +1,17 @@
 <img width="512" height="512" alt="image" src="https://github.com/user-attachments/assets/27648ba1-e366-4ca5-9c23-5c26806498db" />
+
 An easy box to polish your enumeration skills!
+
 * Terminal 1 *
+  
 <img width="708" height="175" alt="image" src="https://github.com/user-attachments/assets/f0cd40c7-d2b4-4811-9579-e5a000918290" />
+
 * Terminal 2 *
+  
 <img width="518" height="99" alt="image" src="https://github.com/user-attachments/assets/abe95f1a-c10c-4006-bc82-ccc3d791afbc" />
+
 *terminal 3 *
+
 <img width="845" height="271" alt="image" src="https://github.com/user-attachments/assets/5acc0111-895b-4aca-8c1e-ee7500a045c8" />
 
 
