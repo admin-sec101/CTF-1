@@ -106,17 +106,19 @@ Ringkasan Hasil EasyCTF
 Berikut adalah rangkuman poin-poin penting yang sudah Anda selesaikan:
 
 ***
+```
 How many services are running under port 1000?    ```2```
 What is running on the higher port?               ```ssh```
 What's the CVE you're using against the application? Vulnerability: SQL Injection (```CVE-2019-9053```).
 To what kind of vulnerability is the application vulnerable?            ```sqli```
 What's the password? Password:             ```secret```.
 Where can you login with the details obtained?           ```ssh```     
-        Login Method: SSH pada port 2222.
+Login Method: SSH pada port 2222.
 What's the user flag?User Flag:             ```G00d j0b, keep up!```
 Is there any other user in the home directory? What's its name? Other User:             ```sunbath```.
 What can you leverage to spawn a privileged shell? PrivEsc Method: Memanfaatkan binary ```vim```.
 What's the root flag? Root Flag:             ```W3ll d0n3. You made it!```.
+```
 ***
 
         Vulnerability (SQLi): Menjelaskan pintu masuk Anda. Tanpa tahu jenis celahnya, kita tidak bisa mengeksploitasi sistem.
