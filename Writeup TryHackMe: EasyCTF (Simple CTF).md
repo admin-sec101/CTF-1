@@ -101,5 +101,28 @@ Penyerangan pada mesin EasyCTF ini menunjukkan betapa pentingnya:
     Memperbarui CMS ke versi terbaru (Patching).
     Mengubah port layanan standar (SSH) tidak cukup jika kredensial lemah.
     Konfigurasi sudoers yang terlalu longgar (misal: izin Vim) dapat menyebabkan eskalasi hak akses penuh.
+    
+Ringkasan Hasil EasyCTF
+Berikut adalah rangkuman poin-poin penting yang sudah Anda selesaikan:
 
+    Vulnerability: SQL Injection (CVE-2019-9053).
+    Password: secret.
+    Login Method: SSH pada port 2222.
+    User Flag: G00d j0b, keep up!.
+    Other User: sunbath.
+    PrivEsc Method: Memanfaatkan binary vim.
+    Root Flag: W3ll d0n3. You made it!.
+    
+        Vulnerability (SQLi): Menjelaskan pintu masuk Anda. Tanpa tahu jenis celahnya, kita tidak bisa mengeksploitasi sistem.
+    Password & Login: Menjelaskan cara Anda bertahan di dalam sistem (Persistence/Access).
+    Port 2222: Menjelaskan hasil enumerasi (pengamatan) Anda bahwa target mencoba menyembunyikan SSH, tapi tetap ketahuan.
+    User & Root Flag: Ini adalah bukti keberhasilan (Proof of Concept) bahwa Anda sudah menembus level user biasa dan level tertinggi (admin).
+    PrivEsc (Vim): Ini bagian paling krusial, karena menjelaskan kelemahan fatal pada konfigurasi sistem tersebut.
+
+    Sedikit Penjelasan "Kenapa" Hal-hal Itu Terjadi:
+
+    Kenapa SQLi? Karena pengembang CMS-nya lupa menyaring input dari user, sehingga database-nya bisa "dibujuk" untuk membocorkan password.
+    Kenapa port 2222? Biasanya admin mengubah port SSH dari 22 ke 2222 untuk menghindari serangan otomatis dari bot internet, tapi bagi pentester seperti Anda, itu cuma masalah waktu sebelum ditemukan lewat Nmap.
+    Kenapa Vim bisa jadi Root? Ini adalah kesalahan admin. Memberikan izin sudo pada aplikasi yang punya fitur "shell escape" (seperti Vim, Nano, atau Less) sama saja dengan memberikan kunci utama gedung kepada orang asing.
+    
 Disclaimer: Dokumentasi ini dibuat hanya untuk kepentingan edukasi dan pembelajaran keamanan informasi secara etis.
