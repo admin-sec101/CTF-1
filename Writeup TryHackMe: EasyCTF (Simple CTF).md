@@ -1,4 +1,7 @@
 🚩 TryHackMe: EasyCTF (Simple CTF) Writeup
+
+<img width="1232" height="538" alt="image" src="https://github.com/user-attachments/assets/bce2917d-1a46-405c-a216-20c084b4fcd8" />
+
 Dokumentasi lengkap proses Security Audit dan Penetration Testing pada mesin EasyCTF (Simple CTF) di platform TryHackMe. Tantangan ini mencakup enumerasi jaringan, eksploitasi kerentanan Web (SQL Injection), hingga eskalasi hak akses (Privilege Escalation) di lingkungan Linux.
 🛠️ Informasi Mesin & Alat
 
