@@ -34,6 +34,8 @@ nmap -sV -sC -Pn 10.49.144.156
     Port 22/tcp: Open (OpenSSH 7.6p1)
     Port 10000/tcp: Open (MiniServ 1.890 - Webmin httpd)
 
+<img width="774" height="249" alt="port1000" src="https://github.com/user-attachments/assets/8572dc8d-65a1-42f4-8ccd-df6a30faa9a4" />
+
 # Analisis Kerentanan
 
 Ditemukan bahwa target menjalankan Webmin versi 1.890. 
@@ -81,6 +83,8 @@ Ketik:
 cat /root/root.txt
 ```
 ```Root Flag: THM{UPDATE_YOUR_INSTALL}```
+
+<img width="782" height="546" alt="ctf" src="https://github.com/user-attachments/assets/c673ee89-5d59-4062-bdec-3f00669eb2b3" />
 
 
 
