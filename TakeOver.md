@@ -45,27 +45,30 @@ Hasil Penemuan:
 
 ### 3. Analisis Sertifikat SSL (Deep Recon)
 Melakukan inspeksi pada sertifikat SSL di port 443 untuk mencari Subject Alternative Names (SAN) yang mungkin membocorkan subdomain lain.
-bash
+```bash
 
 openssl s_client -connect 10.48.147.210:443 | openssl x509 -noout -text | grep DNS
+```
 
 Gunakan kode dengan hati-hati.
 Ditemukan petunjuk mengenai subdomain support.futurevera.thm. Melalui fuzzing lanjutan pada protokol HTTPS, ditemukan subdomain rahasia yang panjang: secrethelpdesk934752.support.futurevera.thm.
 ### 4. Menemukan Flag (Subdomain Takeover)
 Setelah mendaftarkan subdomain rahasia tersebut ke /etc/hosts, dilakukan pengecekan header HTTP untuk melihat ke mana domain tersebut mengarah.
-bash
+```bash
 
 curl -I http://futurevera.thm
+```
 
 Gunakan kode dengan hati-hati.
 Analisis Respons:
 Server memberikan respons 302 Found yang melakukan redirect ke alamat AWS S3 Bucket yang mengandung flag.
-text
+```text
 
 Location: http://flag{beea0d6edfcee06a59b83fb50ae81b2f}://
+```
 
 Gunakan kode dengan hati-hati.
-Flag: flag{beea0d6edfcee06a59b83fb50ae81b2f}
+```Flag: flag{beea0d6edfcee06a59b83fb50ae81b2f}```
 
 💡 Pelajaran yang Didapat (Key Takeaways)
 
