@@ -84,6 +84,8 @@ cat /root/root.txt
 ```
 ```Root Flag: THM{UPDATE_YOUR_INSTALL}```
 
+<img width="773" height="712" alt="msf" src="https://github.com/user-attachments/assets/f558af00-bce5-461a-be0f-85bac461c9ea" />
+
 <img width="782" height="546" alt="ctf" src="https://github.com/user-attachments/assets/c673ee89-5d59-4062-bdec-3f00669eb2b3" />
 
 
