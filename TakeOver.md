@@ -78,3 +78,7 @@ Gunakan kode dengan hati-hati.
     HTTPS vs HTTP: Konfigurasi Virtual Host bisa berbeda antara port 80 dan 443, selalu cek keduanya.
 
 Disclaimer: Dokumentasi ini dibuat hanya untuk tujuan edukasi keamanan siber.
+<img width="772" height="485" alt="1" src="https://github.com/user-attachments/assets/89a23507-e423-4c99-9790-73df654ffdae" />
+<img width="764" height="69" alt="2" src="https://github.com/user-attachments/assets/d82c3ce2-3492-4849-b29b-6ec99e247487" />
+<img width="772" height="247" alt="3" src="https://github.com/user-attachments/assets/313a3b7e-3f26-4724-ae41-9ff3dbcb7159" />
+
