@@ -71,7 +71,8 @@ Ketik:
 ```bash
 cat /home/dark/user.txt
 ```
-    ```User Flag: THM{SUPPLY_CHAIN_COMPROMISE}```
+
+```User Flag: THM{SUPPLY_CHAIN_COMPROMISE}```
     
 # Ambil Flag Root
 Ketik:
