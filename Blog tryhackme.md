@@ -99,15 +99,15 @@ Setelah menjadi root, kita dapat mengambil kedua flag:
     
 <img width="976" height="53" alt="image" src="https://github.com/user-attachments/assets/042177b6-6cfd-4e1e-9cf3-7730e107eedb" />
 
-Where was user.txt found?
+Where was user.txt found? ```/media/usb```
 
 <img width="1270" height="102" alt="image" src="https://github.com/user-attachments/assets/c91f85fb-2b3b-4397-82f7-849e7b4fbf67" />
 
-What CMS was Billy using?
+What CMS was Billy using? ```wordpress```
 
 <img width="1249" height="90" alt="image" src="https://github.com/user-attachments/assets/033a7b47-9e08-4305-ac57-dd2a6f693bd5" />
 
-What version of the above CMS was being used?
+What version of the above CMS was being used? ```5.0```
 
 <img width="924" height="97" alt="image" src="https://github.com/user-attachments/assets/1c44d562-dbbd-47cc-b6d2-e98c791eada9" />
 
