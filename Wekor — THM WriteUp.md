@@ -58,10 +58,10 @@ yura - $P$B6jSC3m7WdMlLi1/NDb3OFhqv536SV/:soccer13
 
 <img width="282" height="56" alt="image" src="https://github.com/user-attachments/assets/02b00053-1a77-4ee9-9554-478ad6e1b8e1" />
 
-```
-┌──(kali㉿kali)-[~/TryHackMe]
+```┌──(kali㉿kali)-[~/TryHackMe]```
+```└─$ cat /usr/share/webshells/php/php-reverse-shell.php```
 
-└─$ cat /usr/share/webshells/php/php-reverse-shell.php
+```
 <?php
 // php-reverse-shell - A Reverse Shell implementation in PHP
 // Copyright (C) 2007 pentestmonkey@pentestmonkey.net
