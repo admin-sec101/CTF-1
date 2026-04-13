@@ -56,11 +56,9 @@ yura - $P$B6jSC3m7WdMlLi1/NDb3OFhqv536SV/:soccer13
     WordPress: Masuk ke dashboard admin menggunakan kredensial yang ditemukan.
     Reverse Shell: Ubah salah satu file tema PHP untuk menyisipkan payload reverse shell guna mendapatkan akses ke sistem sebagai user www-data.
 
-
-<img width="1366" height="684" alt="image" src="https://github.com/user-attachments/assets/522d5638-f3a7-4731-baa8-8b07ef5a86f2" />
-
 <img width="282" height="56" alt="image" src="https://github.com/user-attachments/assets/02b00053-1a77-4ee9-9554-478ad6e1b8e1" />
-
+```-```
+<img width="1366" height="684" alt="image" src="https://github.com/user-attachments/assets/522d5638-f3a7-4731-baa8-8b07ef5a86f2" />
 
 4. Eskalasi Hak Istimewa (Privilege Escalation)
 
