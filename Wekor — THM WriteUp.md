@@ -44,7 +44,7 @@ eagle - $P$BpyTRbmvfcKyTrbDzaK1zSPgM7J6QY/:xxxxxx
 yura - $P$B6jSC3m7WdMlLi1/NDb3OFhqv536SV/:soccer13
 ```
 
-```sudo echo "[Ip]    site.wekor.thm" > /etc/hosts```
+```sudo echo "<IP_ADDRESS>    site.wekor.thm" > /etc/hosts```
 
 
 3. Akses Awal (Initial Access)
