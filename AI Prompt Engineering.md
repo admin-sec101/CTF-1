@@ -56,6 +56,12 @@ Mempelajari bagaimana model seperti GPT memproses input teks menggunakan token d
 
 **3. System vs User Prompts**
 
+  Membahas perbedaan antara:
+
+  System Prompt: Instruksi tingkat tinggi yang menentukan kepribadian, batasan, dan aturan main AI (biasanya tidak terlihat oleh pengguna    akhir).
+  User Prompt: Input langsung yang diberikan pengguna saat berinteraksi dengan AI.
+    
+
   What type of prompt is developer-defined, persistent, and remains constant across all sessions?
 
   ```System prompt```
@@ -65,6 +71,13 @@ Mempelajari bagaimana model seperti GPT memproses input teks menggunakan token d
   ```Instruction hierarchy```
 
 4. Teknik Prompting Lanjutan
+
+   Memperkenalkan metode yang lebih canggih untuk mendapatkan hasil yang akurat:
+
+    Zero-shot: Memberikan instruksi langsung tanpa contoh.
+    One-shot / Few-shot: Memberikan satu atau beberapa contoh input-output agar AI memahami pola yang diinginkan.
+    Chain-of-Thought (CoT): Meminta AI untuk "berpikir langkah demi langkah" guna memecahkan masalah logika atau keamanan yang kompleks.
+    Prompt Templates: Menggunakan placeholder (seperti [LOG_ENTRY]) agar prompt dapat digunakan kembali secara konsisten.
 
    What is the term for the prompting technique introduced by Google researchers in 2022 that asks models to break tasks into intermediate reasoning steps?
 
