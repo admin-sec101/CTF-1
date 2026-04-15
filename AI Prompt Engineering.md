@@ -12,7 +12,7 @@ Learn how LLMs process text and craft effective prompts for security and adversa
 
 **1. Dasar-Dasar LLM**
 
-Mempelajari bagaimana model seperti GPT memproses input teks menggunakan token dan memprediksi kata berikutnya dalam suatu rangkaian. Bagian ini memberikan dasar teknis tentang keterbatasan dan kemampuan model bahasa.
+    Mempelajari bagaimana model seperti GPT memproses input teks menggunakan token dan memprediksi kata berikutnya dalam suatu rangkaian. Bagian ini memberikan dasar teknis tentang keterbatasan dan kemampuan model bahasa.
   
   What is the term for the smallest units that an LLM breaks text into in order to process it?
   
@@ -32,7 +32,7 @@ Mempelajari bagaimana model seperti GPT memproses input teks menggunakan token d
 
   **2. Anatomi Prompt**
 
-  Menjelaskan komponen utama yang membuat sebuah prompt berhasil, termasuk:
+    Menjelaskan komponen utama yang membuat sebuah prompt berhasil, termasuk:
     Instruksi: Tugas yang ingin diselesaikan.
     Konteks: Informasi latar belakang untuk memandu respons.
     Input Data: Data spesifik yang perlu diproses.
@@ -56,10 +56,9 @@ Mempelajari bagaimana model seperti GPT memproses input teks menggunakan token d
 
 **3. System vs User Prompts**
 
-  Membahas perbedaan antara:
-
-  System Prompt: Instruksi tingkat tinggi yang menentukan kepribadian, batasan, dan aturan main AI (biasanya tidak terlihat oleh pengguna    akhir).
-  User Prompt: Input langsung yang diberikan pengguna saat berinteraksi dengan AI.
+    Membahas perbedaan antara:
+    System Prompt: Instruksi tingkat tinggi yang menentukan kepribadian, batasan, dan aturan main AI (biasanya tidak terlihat oleh pengguna akhir).
+    User Prompt: Input langsung yang diberikan pengguna saat berinteraksi dengan AI.
     
 
   What type of prompt is developer-defined, persistent, and remains constant across all sessions?
