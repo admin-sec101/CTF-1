@@ -169,3 +169,5 @@ cat flag.txt
 ebcefd66ca4b559d17b440b6e67fd0fd
 root@ip-10-48-181-181:~/Reptile# 
 ```
+
+<img width="1366" height="594" alt="image" src="https://github.com/user-attachments/assets/a0083d5a-513d-49fb-aeaf-6dc82449d592" />
