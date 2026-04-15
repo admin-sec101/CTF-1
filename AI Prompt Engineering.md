@@ -70,7 +70,7 @@ Mempelajari bagaimana model seperti GPT memproses input teks menggunakan token d
 
   ```Instruction hierarchy```
 
-4. Teknik Prompting Lanjutan
+**4. Teknik Prompting Lanjutan**
 
    Memperkenalkan metode yang lebih canggih untuk mendapatkan hasil yang akurat:
 
