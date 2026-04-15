@@ -52,7 +52,7 @@ Mempelajari bagaimana model seperti GPT memproses input teks menggunakan token d
 
   Which pillar of prompt engineering defines the core command or action you want the AI to perform?
 
-  ``Instruction```
+  ```Instruction```
 
 **3. System vs User Prompts**
 
