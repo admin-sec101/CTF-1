@@ -11,6 +11,8 @@ Q.1: The attacker is trying to log into a specific service. What service is this
 
 <img width="433" height="82" alt="image" src="https://github.com/user-attachments/assets/1fc392cc-170e-489a-ae1a-6c7cd90236a8" />
 
+<img width="1182" height="87" alt="image" src="https://github.com/user-attachments/assets/7f92c7a6-c843-420b-a9b8-70faf8d46428" />
+
 ```Answer: FTP```
 
 Q.2: There is a very popular tool by Van Hauser which can be used to brute force a series of services. What is the name of this tool?
